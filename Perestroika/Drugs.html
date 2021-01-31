@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Perestroika_CSS.css">
+</head>
+
+<body style="background-image:url('woodtabletop.jpg');" onload="playMusic()">
+
+<p id="bgmusic"></p>
+
+
+<p id="drinkText" style="color:mediumseagreen;text-align:right">
+Take a drink and relax...
+</p>
+
+
+<button onclick="myFunction()" style="background-color:none; position:absolute; top:60%; left:15%"><img src="whiskey.png" alt="whiskey" style="width:350px;height:350px;"></button>
+
+
+
+<script>
+function playMusic(){
+document.getElementById("bgmusic").innerHTML ='<audio src="distortedvoices.mp3" type="audio/mpeg" autoplay loop></audio>'
+}
+
+
+
+var x=0;
+function myFunction() {
+  x=x+1;
+  var text
+  if(x==1){
+	text = "Just " + x + " drink...really?!";
+  	document.getElementById("drinkText").innerHTML = text;
+    }
+  else if(x <= 3){
+    text = "Just " + x + " drinks...really?!";
+  	document.getElementById("drinkText").innerHTML = text;
+    }
+  else if(x==4){
+    text = "C'mon just one more! <br> I promise it'll be worth it!";
+  	document.getElementById("drinkText").innerHTML = text;
+	}
+  else if(x==5){
+  	document.getElementById("drinkText").innerHTML = '<iframe src="https://zoom.us/wc/join/3339708497" width="1920" height="1080" title="Iframe Example"></iframe>';
+    }
+  else{document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";}
+}
+</script>
+
+
+<script src="Perestroika_Intermission.js"></script>
+
+</body>
+
+
+</html>

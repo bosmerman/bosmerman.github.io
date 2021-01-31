@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Perestroika_CSS.css">
+	<link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+	<style>
+	p{
+	display:inline-block; font-family: 'Swanky and Moo Moo'; color:black;
+	}
+	</style>
+</head>
+
+<body onload="timedText()" style="background-image:none; background-color:snow; text-align:center;">
+
+<iframe width="1600" height="1080" src="https://www.youtube.com/embed/mq_hZ6uwdZM?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="left">
+<p style="float:left;" id="TextA"></p>
+</div>
+
+<div class="center">
+<p style="" id="TextB"></p>
+</div>
+
+<div class="right">
+<p style="float:right;" id="TextC"></p>
+</div>
+
+
+<script>
+function timedText(){
+	setTimeout(ShowTextA,5000);
+	setTimeout(ShowTextB,6000);
+	setTimeout(ShowTextC,7000);
+}
+
+function ShowTextA(){
+	document.getElementById("TextA").innerHTML = "Why";
+}
+
+
+function ShowTextB(){
+	document.getElementById("TextB").innerHTML = "didn't you";
+}
+
+
+function ShowTextC(){
+	document.getElementById("TextC").innerHTML = "wake up?!";
+}
+	
+</script>
+
+
+
+
+</body>
+
+
+</html>
