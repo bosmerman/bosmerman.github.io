@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href='https://fonts.googleapis.com/css?family=Stalinist One' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Stalinist One';font-size: 22px; color: red; background-color: black;
+}
+
+h2 {color: maroon;}
+	p {color: white;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="img2.jpg" alt="Workplace" usemap="#workmap" width="500" height="500">
+
+<map name="workmap">
+  <area shape="rect" coords="0,0,500,100" alt="Sky" href="https://operations.fnal.gov">
+  
+  <area shape="poly" coords="500,413,357,500,500,500" alt="Grass" href="https://ad.fnal.gov">
+ 
+  <area shape="circle" coords="468,395,15" alt="VentUpper" href="VSM_pp2.html">
+</map>
+
+<input type="text" value="Type stuff here" id="userinputtext"/><br />
+<button type="button" onclick="testButton()">O</button>
+
+<p id="demo"></p>
+
+
+
+<script>
+function testButton(){
+var UserInputText = "<iframe width="560" height="315" src="https://www.youtube.com/embed/NRo4lVUQmGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>";
+	document.getElementById("demo").innerHTML = UserInputText;
+}
+</script>
+
+
+<!-- 
+*****************************************************************************************************
+IFRAME BROWSER ZOOM MEETING (OR OTHER VIDEO CONFERENCE)
+<https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width>
+
+<iframe src="https://zoom.us/wc/join/6308403196" height="800" width="800" title="Iframe Example"></iframe>
+
+-->
+
+
+<!-- 
+*****************************************************************************************************
+CLICK BUTTON MULTIPLE TIMES FOR DIFFERENT OUTPUT 
+<>
+-->
+<button onclick="myFunction()">Multiple Clicks (5x = Zoom)</button>
+
+<p id="demo"></p>
+
+<script>
+var x=0;
+function myFunction() {
+  x=x+1;
+  var text
+  if(x<5){
+	text = "I've been waiting " + x + " clicks already! SHEESH!";
+  	document.getElementById("demo").innerHTML = text;
+    }
+  else if(x==5){
+  	document.getElementById("demo").innerHTML = '<iframe src="https://zoom.us/wc/join/8403196" height="800" width="800" title="Iframe Example"></iframe>';
+    }
+  else{document.getElementById("demo").innerHTML = "[error]";}
+}
+</script>
+
+
+
+
+<!-- 
+*****************************************************************************************************
+BUTTON BINARY DECISION 
+<https://www.w3schools.com/js/tryit.asp?filename=tryjs_confirm>
+-->
+<button onclick="myFunctionBinaryDecision()">BinaryDecision</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunctionBinaryDecision() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "NEATO!";
+  } else {
+    txt = '<iframe src="https://zoom.us/wc/join/8403196" height="800" width="800" title="Iframe Example"></iframe>';
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<!-- 
+*****************************************************************************************************
+DELAYED POP-UP/ALERT MESSAGE 
+<https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing1>
+-->
+<!-- <button onclick="setTimeout(myFunction, 3000);">Try it</button> -->
+<script>
+setTimeout(myFunctionPopUp, 3000);
+function myFunctionPopUp() {
+  alert('Oh hi there!');
+}
+</script>
+
+<!-- 
+*****************************************************************************************************
+RELOAD/REDIRECT TO DIFFERENT WEBPAGE 
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_redirect_webpage>
+-->
+<button onclick="myFunctionREDIRECT()">Redirect</button>
+
+<script>
+function myFunctionREDIRECT() {
+  location.assign("https://en.wikipedia.org/wiki/The_Matrix")
+}
+<!-- N.B. 'assign' allows you to navigate back, 'replace' does not (might be good for all together middle page and end) -->
+</script>
+
+
+<!-- 
+*****************************************************************************************************
+ENTER PASSWORD TO OPEN LINK/IFRAME 
+<https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt>
+-->
+
+<button onclick="myFunctionPassword()">ENTER PASSWORD</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunctionPassword() {
+  var txt;
+  var person = prompt("What's the Password:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else if (person == "Zoom") {
+    txt = '<iframe src="https://zoom.us/wc/join/8403196" height="800" width="800" title="Iframe Example"></iframe>';
+  } else {
+  	txt = "No " + person + " is so SO wrong, how dare you!";
+    }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
