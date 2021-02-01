@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Stalinist One');
 
-body {
+body.frame {
 	height: 100%;
-	background-image: linear-gradient(to right, maroon -100%, black);
+	background-image: linear-gradient(to right, teal -100%, white);
 }
 
 h1 {
