@@ -11,11 +11,11 @@ Website for testing or production for "Perestroika" online theatre project.
         /\/\/\/\/\/\/\/\/\
           Rooms [S,D,N]
                \/
-          Intermission
+          Intermission [S,D,N]
             /      \
     Uncomf Truth   Comf Lie
        /\/\/\/\/\/\/\/\/\
     Rooms [ST-SL, DT-DL, NT-NL]
                \/
-              End
+     End [ST-SL, DT-DL, NT-NL]
        
