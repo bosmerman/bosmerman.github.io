@@ -15,7 +15,7 @@
 	  position: relative;
 	  width: 100%;
 	  overflow: hidden;
-	  /* padding-top: 56.25%; /* 16:9 Aspect Ratio */ 
+	  padding-top: 56.25%; /* 16:9 Aspect Ratio */ 
 	}
 
 	.responsive-iframe {
@@ -35,10 +35,12 @@
 
 
 <div class="container">
+</div>
+	
 <h1 id="IntroVid">
 Chimera
 </h1>
-</div>
+
 
 <div class="left">
 <p style="float:left; display:inline-block;" id="LeftButton"></p>
@@ -73,7 +75,7 @@ var UserInputText = '<iframe class="responsive-iframe" src="https://www.youtube.
 function ShowButtons(){
 var LeftButtonText = '<a href="Stars.html"><img src="stars.png" alt="leftbutton" style="width:100px;height:100px;"></a>';
 var CenterButtonText = '<a href="Drugs.html"><img class="shaker" src="pill.png" alt="centerbutton" style="width:100px;height:100px;"></a>';
-var RightButtonText = ' <a href="VSM_001.html"><img src="newspaper.png" alt="rightbutton" style="width:100px;height:100px;"></a> ';
+var RightButtonText = '<a href="VSM_001.html"><img src="newspaper.png" alt="rightbutton" style="width:100px;height:100px;"></a>';
 	document.getElementById("LeftButton").innerHTML = LeftButtonText;
 	document.getElementById("CenterButton").innerHTML = CenterButtonText;
 	document.getElementById("RightButton").innerHTML = RightButtonText;
@@ -81,6 +83,7 @@ var RightButtonText = ' <a href="VSM_001.html"><img src="newspaper.png" alt="rig
 $(document).ready(function(){
   $("#hideID").click(function(){
     $("button").hide();
+    $("h1").hide();
   });
 });
 </script>
