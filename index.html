@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="Perestroika_CSS.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style>
 		h1 {
 		text-align:center;
@@ -35,14 +36,9 @@ Chimera
 
 
 
-<button onclick="StartIntro()" style="background-color:dimgrey;">Wake Up</button>
-
+<button id="hideID" onclick="StartIntro()" style="background-color:dimgrey;">Wake Up</button>
+	
 <!--<p style="text-align:center" id="IntroVid"></p>-->
-
-
-
-
-
 
 
 
@@ -64,6 +60,11 @@ var RightButtonText = ' <a href="VSM_001.html"><img src="newspaper.png" alt="rig
 	document.getElementById("CenterButton").innerHTML = CenterButtonText;
 	document.getElementById("RightButton").innerHTML = RightButtonText;
 }
+$(document).ready(function(){
+  $("#hideID").click(function(){
+    $("button").hide();
+  });
+});
 </script>
 
 <script src="Perestroika_Intermission.js"></script>
