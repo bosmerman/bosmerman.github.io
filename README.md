@@ -13,9 +13,9 @@ Website for testing or production for "Perestroika" online theatre project.
                \/
           Intermission
             /      \
-		Uncomf Truth   Comf Lie
+    Uncomf Truth   Comf Lie
        /\/\/\/\/\/\/\/\/\
-	Rooms [ST-SL, DT-DL, NT-NL]
+    Rooms [ST-SL, DT-DL, NT-NL]
                \/
               End
        
