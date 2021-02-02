@@ -3,10 +3,11 @@
 body.frame {
 	height: 100%;
 	background-image: linear-gradient(to right, aquamarine -100%, linen);
-	transition-duration: 5s;
+	
 }
 body.frame:hover {
 	background-image: linear-gradient(to left, aquamarine -100%, linen);	
+	transition-duration: 1s;
 }
 
 h1 {
