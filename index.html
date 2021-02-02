@@ -52,13 +52,12 @@
 	
 	<!-- Attempt to change BODY background when hover over BUTTON -->
 	<script>
-		$(document).ready(function(){
-  $("button").hover(function(){
-    $(".frame").css("background-image", "linear-gradient(to left, aquamarine -100%, linen");
-    }, function(){
-    $(this).css("background-color", "pink");
-  });
-});
+	$(document).ready(function(){
+  	$("button").hover(function(){
+   	$(".frame").css("background-image", "linear-gradient(to left, aquamarine -100%, linen");
+	$(".frame").css("transition-duration", "1s");
+    	}
+	});
 		/*.frame{
 	background-image: linear-gradient(to left, aquamarine -100%, linen);	
 	transition-duration: 1s;
