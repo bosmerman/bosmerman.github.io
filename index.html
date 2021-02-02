@@ -46,13 +46,22 @@
 	.button:hover {
   	background-color: azure;
   	color: goldenrod;
-	.frame{
-	background-image: linear-gradient(to left, aquamarine -100%, linen);	
-	transition-duration: 1s;
-		}	
 	}
 	
 	</style>
+	<script>
+		$(document).ready(function(){
+  $(".frame").hover(function(){
+    $(this).css("background-image", "linear-gradient(to left, aquamarine -100%, linen"););
+    }, function(){
+    $(this).css("background-color", "pink");
+  });
+});
+		/*.frame{
+	background-image: linear-gradient(to left, aquamarine -100%, linen);	
+	transition-duration: 1s;
+		}	*/
+	</script>
 </head>
 
 <body class="frame">
