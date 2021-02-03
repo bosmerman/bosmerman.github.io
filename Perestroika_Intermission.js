@@ -9,7 +9,7 @@ var nowSeconds = d.getSeconds();
 
 var diffHoursinSec = (desireHours - nowHours)*3600;
 var diffMinutesinSec = (desireMinutes - nowMinutes)*60;
-var diffSecondsinSec = (desireSeconds - nowSeconds);
+var diffSecondsinSec = Math.abs(desireSeconds - nowSeconds);
 
 offsetTiminginMillisec = (diffHoursinSec + diffMinutesinSec + diffSecondsinSec)*1000;
 
