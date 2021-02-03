@@ -76,6 +76,12 @@
 <body class="frame">
 
 
+	
+<h1 id="IntroVid">
+Chimera
+</h1>
+
+
 <div class="left">
 <p style="float:left; display:inline-block;" id="LeftButton"></p>
 </div>
@@ -88,12 +94,6 @@
 <p style="float:right; display:inline-block;" id="RightButton"></p>
 </div>
 	
-	
-<h1 id="IntroVid">
-Chimera
-</h1>
-
-
 
 <button id="hideID" class="button" onclick="StartIntro()">Wake Up</button>
 	
@@ -107,14 +107,14 @@ Chimera
 
 <script>
 function StartIntro(){
-var UserInputText = '<iframe class="responsive-iframe" src="https://player.vimeo.com/video/49553745?autoplay=1&title=0&byline=0&portrait=0&background=0#t=46s"></iframe>'
-	document.getElementById("IntroVid").innerHTML = UserInputText;
-	
 	$(document).ready(function(){
   	$("#hideID").click(function(){
     	$("button").hide();
   	});
 	});
+	
+	var UserInputText = '<iframe class="responsive-iframe" src="https://player.vimeo.com/video/49553745?autoplay=1&title=0&byline=0&portrait=0&background=0#t=46s"></iframe>'
+	document.getElementById("IntroVid").innerHTML = UserInputText;
 	
 	setTimeout(ShowButtons,3000);
 }
