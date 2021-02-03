@@ -109,6 +109,13 @@ Chimera
 function StartIntro(){
 var UserInputText = '<iframe class="responsive-iframe" src="https://player.vimeo.com/video/49553745?autoplay=1&title=0&byline=0&portrait=0&background=0#t=46s"></iframe>'
 	document.getElementById("IntroVid").innerHTML = UserInputText;
+	
+	$(document).ready(function(){
+  	$("#hideID").click(function(){
+    	$("button").hide();
+  	});
+	});
+	
 	setTimeout(ShowButtons,3000);
 }
 
@@ -120,11 +127,7 @@ var RightButtonText = '<a href="VSM_001.html"><img src="newspaper.png" alt="righ
 	document.getElementById("CenterButton").innerHTML = CenterButtonText;
 	document.getElementById("RightButton").innerHTML = RightButtonText;
 }
-$(document).ready(function(){
-  $("#hideID").click(function(){
-    $("button").hide();
-  });
-});
+
 </script>
 
 <script src="Perestroika_Intermission.js"></script>
