@@ -9,7 +9,7 @@
 <p id="bgmusic"></p>
 
 
-<p id="drinkText" style="color:mediumseagreen;text-align:right">
+<p class="container-iframe" id="drinkText" style="color:mediumseagreen;text-align:right">
 Take a drink and relax...
 </p>
 
@@ -42,7 +42,7 @@ function myFunction() {
   	document.getElementById("drinkText").innerHTML = text;
 	}
   else if(x==5){
-  	document.getElementById("drinkText").innerHTML = '<iframe src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
+  	document.getElementById("drinkText").innerHTML = '<iframe class="responsive-iframe" src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
     }
   else{document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";}
 }
