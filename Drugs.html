@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="Perestroika_CSS.css">
 </head>
 
-<body style="background-image:url('woodtabletop.jpg');" onload="playMusic()">
+<body id="body" style="background-image:url('woodtabletop.jpg');" onload="playMusic()">
 
 <p id="bgmusic"></p>
 
@@ -37,17 +37,17 @@ function myFunction() {
   if(x==1){
 	text = "Just " + x + " drink...really?!";
   	document.getElementById("drinkText").innerHTML = text;
-	body.style.filter="blur(1px)";
+	document.getElementById("body").style.filter = "blur(1px)";
     }
   else if(x <= 3){
     text = "Just " + x + " drinks...really?!";
   	document.getElementById("drinkText").innerHTML = text;
-	body.style.filter="blur(2px)";
+	document.getElementById("body").style.filter = "blur(2px)";
     }
   else if(x==4){
     text = "C'mon just one more! <br> I promise it'll be worth it!";
   	document.getElementById("drinkText").innerHTML = text;
-	body.style.filter="blur(3px)";
+	document.getElementById("body").style.filter = "blur(3px)";
 	}
   else if(x==5){
   	document.getElementById("drinkText").innerHTML = " ";
@@ -57,10 +57,10 @@ function myFunction() {
 	document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";
 	document.getElementById("zoom").innerHTML = " ";
   	/*body.style.filter="blur(5px)";*/
-	document.getElementByTagName("body").style.transition = "all 5s";
-	document.getElementByTagName("body").style.filter = "blur(5px)";
-	document.getElementByTagName("body").style.filter = "hue-rotate(90deg)";
-	document.getElementByTagName("body").style.filter = "rotate(45deg)";
+	document.getElementById("body").style.transition = "all 5s";
+	document.getElementById("body").style.filter = "blur(5px)";
+	document.getElementById("body").style.filter = "hue-rotate(90deg)";
+	document.getElementById("body").style.transform = "rotate(45deg)";
   }
 }
 </script>
