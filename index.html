@@ -126,7 +126,14 @@ Chimera
 </div>
 	
 
-<button id="hideID" class="button" onclick="StartIntro()">Wake Up</button>
+<button id="hideID" class="button" onclick="StartIntro()" onmouseover="bgsound()">Wake Up</button>
+	
+<p id="bgsoundid"></p>	
+
+<script>
+function bgsound(){
+document.getElementById("bgsoundid").innerHTML ='<audio src="light-on-hum.mp3" type="audio/mpeg" autoplay loop></audio>'
+</script>
 	
 <!--<p style="text-align:center" id="IntroVid"></p>-->
 
