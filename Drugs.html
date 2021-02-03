@@ -59,9 +59,15 @@ function myFunction() {
 	document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";
 	/*document.getElementById("zoom").innerHTML = " ";*/
   	/*body.style.filter="blur(5px)";*/
-	document.getElementById("drinkText zoom button").style.transition = "all 15s";
-	document.getElementById("drinkText zoom button").style.filter = "blur(5px) hue-rotate(90deg)";
-	document.getElementById("drinkText zoom button").style.transform = "rotate(45deg)";
+	document.getElementById("drinkText").style.transition = "all 15s";
+	  document.getElementById("zoom").style.transition = "all 15s";
+	  document.getElementById("button").style.transition = "all 15s";
+	document.getElementById("drinkText").style.filter = "blur(5px) hue-rotate(90deg)";
+	  document.getElementById("zoom").style.filter = "blur(5px) hue-rotate(90deg)";
+	  document.getElementById("button").style.filter = "blur(5px) hue-rotate(90deg)";
+	document.getElementById("drinkText").style.transform = "rotate(45deg)";
+	  document.getElementById("zoom").style.transform = "rotate(45deg)";
+	  document.getElementById("button").style.transform = "rotate(45deg)";
   }
 }
 </script>
