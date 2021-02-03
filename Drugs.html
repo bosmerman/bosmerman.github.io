@@ -34,20 +34,29 @@ function myFunction() {
   if(x==1){
 	text = "Just " + x + " drink...really?!";
   	document.getElementById("drinkText").innerHTML = text;
+	body.style.filter="blur(1px)";
     }
   else if(x <= 3){
     text = "Just " + x + " drinks...really?!";
   	document.getElementById("drinkText").innerHTML = text;
+	body.style.filter="blur(2px)";
     }
   else if(x==4){
     text = "C'mon just one more! <br> I promise it'll be worth it!";
   	document.getElementById("drinkText").innerHTML = text;
+	body.style.filter="blur(3px)";
 	}
   else if(x==5){
   	document.getElementById("drinkText").innerHTML = " ";
 	document.getElementById("zoom").innerHTML = '<iframe class="responsive-iframe" src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
     }
-  else{document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";}
+  else{
+	document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";
+  	/*body.style.filter="blur(5px)";*/
+	document.getElementById("body").style.filter = "blur(5px)";
+	document.getElementById("body").style.filter = "hue-rotate(90deg)";
+	document.getElementById("body").style.filter = "rotate(45deg)";
+  }
 }
 </script>
 
