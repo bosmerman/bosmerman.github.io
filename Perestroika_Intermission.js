@@ -1,6 +1,6 @@
 var desireHours = 23;
-var desireMinutes = 52;
-var desireSeconds = 0;
+var desireMinutes = 59;
+var desireSeconds = 50;
 
 var d = new Date();
 var nowHours = d.getHours();
