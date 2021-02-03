@@ -9,10 +9,12 @@
 <p id="bgmusic"></p>
 
 
-<p class="container-iframe" id="drinkText" style="color:mediumseagreen;text-align:right">
+<p id="drinkText" style="color:mediumseagreen;text-align:right">
 Take a drink and relax...
 </p>
 
+<div id="zoom" class="container-iframe">
+</div>
 
 <button onclick="myFunction()" style="background-color:none; position:absolute; top:60%; left:15%"><img src="whiskey.png" alt="whiskey" style="width:350px;height:350px;"></button>
 
@@ -42,7 +44,8 @@ function myFunction() {
   	document.getElementById("drinkText").innerHTML = text;
 	}
   else if(x==5){
-  	document.getElementById("drinkText").innerHTML = '<iframe class="responsive-iframe" src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
+  	document.getElementById("drinkText").innerHTML = " ";
+	document.getElementById("zoom").innerHTML = '<iframe class="responsive-iframe" src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
     }
   else{document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";}
 }
