@@ -16,7 +16,7 @@ Take a drink and relax...
 <div id="zoom" class="container-iframe">
 </div>
 
-<button onclick="myFunction()" style="background-color:none; position:absolute; top:60%; left:15%"><img src="whiskey.png" alt="whiskey" style="width:350px;height:350px;"></button>
+<button id="button" onclick="myFunction()" style="background-color:none; position:absolute; top:60%; left:15%"><img src="whiskey.png" alt="whiskey" style="width:350px;height:350px;"></button>
 
 
 
@@ -38,7 +38,7 @@ function myFunction() {
 	text = "Just " + x + " drink...really?!";
   	document.getElementById("drinkText").innerHTML = text;
 	document.getElementById("body").style.filter = "blur(1px)";
-	document.getElementById("bgmusic").innerHTML ='<audio src="distortedvoices.mp3" type="audio/mpeg" autoplay loop></audio>'
+	document.getElementById("bgmusic").innerHTML ='<audio src="bar-ambiance.wav" type="audio/mpeg" autoplay loop></audio>'
     }
   else if(x <= 3){
     text = "Just " + x + " drinks...really?!";
@@ -55,13 +55,13 @@ function myFunction() {
 	document.getElementById("zoom").innerHTML = '<iframe class="responsive-iframe" src="https://zoom.us/wc/join/3339708497?pwd=T2Z0eVBVSktXaHZKYjhTVFYvVFAzUT09" width="1920" height="1080" title="Iframe Example"></iframe>';
     }
   else{
+	document.getElementById("bgmusic").innerHTML ='<audio src="distortedvoices.mp3" type="audio/mpeg" autoplay loop></audio>'
 	document.getElementById("drinkText").innerHTML = "WOAH too much, you need to get cut off! Reload this page to clear your head";
-	document.getElementById("zoom").innerHTML = " ";
+	/*document.getElementById("zoom").innerHTML = " ";*/
   	/*body.style.filter="blur(5px)";*/
-	document.getElementById("body").style.transition = "all 15s";
-	document.getElementById("body").style.filter = "blur(5px), hue-rotate(90deg)";
-	/*document.getElementById("body").style.filter = "hue-rotate(90deg)";*/
-	document.getElementById("body").style.transform = "rotate(45deg)";
+	document.getElementById("drinkText zoom button").style.transition = "all 15s";
+	document.getElementById("drinkText zoom button").style.filter = "blur(5px) hue-rotate(90deg)";
+	document.getElementById("drinkText zoom button").style.transform = "rotate(45deg)";
   }
 }
 </script>
