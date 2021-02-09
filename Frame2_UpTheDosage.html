@@ -10,45 +10,31 @@
 	</style>
 </head>
 
-<body onload="timedText()" style="background-image:none; background-color:snow; text-align:center;">
+<body>
 
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/164128292?autoplay=1&title=0&byline=0&portrait=0&background=0#t=19s" style="clip-path:circle(50%);"></iframe>
 
 
 <div class="left">
-<p style="float:left;" id="TextA"></p>
+<p style="float:left;" id="LeftButton"></p>
 </div>
 
-<div class="center">
-<p style="" id="TextB"></p>
-</div>
 
 <div class="right">
-<p style="float:right;" id="TextC"></p>
+<p style="float:right;" id="RightButton"></p>
 </div>
 
 
 <script>
-function timedText(){
-	setTimeout(ShowTextA,5000);
-	setTimeout(ShowTextB,6000);
-	setTimeout(ShowTextC,7000);
+
+setTimeout(ShowButtons,3000);
+
+function ShowButtons(){
+var LeftButtonText = '<a href="2_a_ScareCoves/ScareCoves.html">LIE</a>';
+var RightButtonText = '<a href="2_a_Oppose/Oppose.html">TRUTH</a>';
+	document.getElementById("LeftButton").innerHTML = LeftButtonText;
+	document.getElementById("RightButton").innerHTML = RightButtonText;
 }
-
-function ShowTextA(){
-	document.getElementById("TextA").innerHTML = "Why";
-}
-
-
-function ShowTextB(){
-	document.getElementById("TextB").innerHTML = "didn't you";
-}
-
-
-function ShowTextC(){
-	document.getElementById("TextC").innerHTML = "wake up?!";
-}
-	
 </script>
 
 
