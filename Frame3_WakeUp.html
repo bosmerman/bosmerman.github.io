@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Perestroika_CSS.css">
+	<link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+	<style>
+	p{
+	display:inline-block; font-family: 'Swanky and Moo Moo'; color:black;
+	}
+	</style>
+</head>
+
+<body>
+
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/164128292?autoplay=1&title=0&byline=0&portrait=0&background=0#t=19s" style="clip-path:circle(50%);"></iframe>
+
+
+<div class="left">
+<p style="float:left;" id="LeftButton"></p>
+</div>
+
+
+<div class="right">
+<p style="float:right;" id="RightButton"></p>
+</div>
+
+
+<script>
+
+setTimeout(ShowButtons,3000);
+
+function ShowButtons(){
+var LeftButtonText = '<a href="/3_a_AfterParty/AfterParty.html">WET [webpage not ready]</a>';
+var RightButtonText = '<a href="/Frame1_YoureInAComa.html">DRY [webpage not ready]</a>';
+	document.getElementById("LeftButton").innerHTML = LeftButtonText;
+	document.getElementById("RightButton").innerHTML = RightButtonText;
+}
+</script>
+
+
+
+
+</body>
+
+
+</html>
