@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Stalinist One');
-/*
-body.frame {
-	height: 100%;
-	background-image: linear-gradient(to right, aquamarine -100%, linen);
-	
+
+body {
+	background-image: linear-gradient(to right, black -100%, dimgrey);
 }
-*/
+
 
 h1 {
 	font-family: 'Stalinist One';font-size: 90px; /*color: white;*/
 }
 
+
 p {
-	font-family: 'Stalinist One';font-size: 90px; color: white;
+	font-family: 'Stalinist One';font-size: 90px; color: firebrick;
 }
 
 
