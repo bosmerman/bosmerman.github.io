@@ -10,7 +10,7 @@ Waiting Room
   |
 FRAME (You're In A Coma) <LIVE>
   |
-Alien [News] <Z, aud mic> --- Addiction Clinic [Drugs] <Z, aud vid> --- Tarot Meme [Stars]
+Alien [News] <Z, aud mic> --- Addiction Clinic [Drugs] <Z, aud vid> --- Meme Tarot [Stars]
 Cerebellum <Z>
 Dopamine DJ <Z, aSM music>
 Morning Routine <Rec>
