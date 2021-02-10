@@ -38,51 +38,6 @@
 	background-image: linear-gradient(to bottom right, #080808, black);
 	}
 		
-	.shaker:hover {
-	  animation: shake 0.5s;
-	  animation-iteration-count: infinite;
-	}
-
-	@keyframes shake {
-	  0% { transform: translate(1px, 1px) rotate(3deg); }
-	  10% { transform: translate(-2px, -2px) rotate(-1deg); }
-	  20% { transform: translate(-1px, 1px) rotate(1deg); }
-	  30% { transform: translate(3px, 2px) rotate(2deg); }
-	  40% { transform: translate(1px, -1px) rotate(5deg); }
-	  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-	  60% { transform: translate(-3px, 1px) rotate(8deg); }
-	  70% { transform: translate(3px, 1px) rotate(-01deg); }
-	  80% { transform: translate(-1px, -1px) rotate(11deg); }
-	  90% { transform: translate(1px, 1px) rotate(10deg); }
-	  100% { transform: translate(1px, -2px) rotate(-11deg); }
-	}
-
-	.left {
-	  margin: 50px;
-	  position: absolute;
-	  top: 10%;
-	  left: 20%;
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	}
-
-	.center {
-	  margin: 50px;
-	  position: absolute;
-	  top: 10%;
-	  left: 50%;
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	}
-
-	.right {
-	  margin: 50px;
-	  position: absolute;
-	  top: 10%;
-	  left: 80%;
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	}
 	
 
 </style>
@@ -107,23 +62,10 @@
 <body class="frame">
 
 
-<!--
-BUTTONS
--->
-<div class="left">
-<p style="float:left; display:inline-block;" id="LeftButton"></p>
-</div>
 
-<div class="center">
-<p style="display:inline-block;" id="CenterButton"></p>
-</div>
-
-<div class="right">
-<p style="float:right; display:inline-block;" id="RightButton"></p>
-</div>
 	
 <!--
-TITLE & VIDEO SLOT
+TITLE
 -->
 <h1 id="IntroVid">
 Chimera
@@ -155,27 +97,8 @@ document.getElementById("bgsoundid").innerHTML ='<audio src="light-on-hum.mp3" t
 
 <script>
 function StartIntro(){
-	/*$(document).ready(function(){
-  	$("#hideID").click(function(){
-    	$("button").hide();
-  	});
-	});*/
-	
-	var UserInputText = '<iframe class="responsive-iframe-FRAME" src="https://player.vimeo.com/video/164128292?autoplay=1&title=0&byline=0&portrait=0&background=0#t=19s" style="clip-path:circle(50%);"></iframe>'
-	document.getElementById("IntroVid").innerHTML = UserInputText;
-	
-	setTimeout(ShowButtons,3000);
+location.replace("/Frame1_YoureInAComa.html")
 }
-
-function ShowButtons(){
-var LeftButtonText = '<a href="1_a_MemeTarot/MemeTarot.html"><img src="stars.png" alt="leftbutton" style="width:100px;height:100px;"></a>';
-var CenterButtonText = '<a href="1_a_AddictionClinic/AddictionClinic.html"><img class="shaker" src="pill.png" alt="centerbutton" style="width:100px;height:100px;"></a>';
-var RightButtonText = '<a href="1_a_Alien/Alien.html"><img src="newspaper.png" alt="rightbutton" style="width:100px;height:100px;"></a>';
-	document.getElementById("LeftButton").innerHTML = LeftButtonText;
-	document.getElementById("CenterButton").innerHTML = CenterButtonText;
-	document.getElementById("RightButton").innerHTML = RightButtonText;
-}
-
 </script>
 
 <script src="Perestroika_Intermission.js"></script>
