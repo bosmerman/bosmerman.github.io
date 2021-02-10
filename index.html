@@ -39,50 +39,50 @@
 	}
 		
 	.shaker:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
+	  animation: shake 0.5s;
+	  animation-iteration-count: infinite;
+	}
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(3deg); }
-  10% { transform: translate(-2px, -2px) rotate(-1deg); }
-  20% { transform: translate(-1px, 1px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(2deg); }
-  40% { transform: translate(1px, -1px) rotate(5deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(8deg); }
-  70% { transform: translate(3px, 1px) rotate(-01deg); }
-  80% { transform: translate(-1px, -1px) rotate(11deg); }
-  90% { transform: translate(1px, 1px) rotate(10deg); }
-  100% { transform: translate(1px, -2px) rotate(-11deg); }
-}
+	@keyframes shake {
+	  0% { transform: translate(1px, 1px) rotate(3deg); }
+	  10% { transform: translate(-2px, -2px) rotate(-1deg); }
+	  20% { transform: translate(-1px, 1px) rotate(1deg); }
+	  30% { transform: translate(3px, 2px) rotate(2deg); }
+	  40% { transform: translate(1px, -1px) rotate(5deg); }
+	  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	  60% { transform: translate(-3px, 1px) rotate(8deg); }
+	  70% { transform: translate(3px, 1px) rotate(-01deg); }
+	  80% { transform: translate(-1px, -1px) rotate(11deg); }
+	  90% { transform: translate(1px, 1px) rotate(10deg); }
+	  100% { transform: translate(1px, -2px) rotate(-11deg); }
+	}
 
-.left {
-  margin: 50px;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+	.left {
+	  margin: 50px;
+	  position: absolute;
+	  top: 10%;
+	  left: 20%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
 
-.center {
-  margin: 50px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+	.center {
+	  margin: 50px;
+	  position: absolute;
+	  top: 10%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
 
-.right {
-  margin: 50px;
-  position: absolute;
-  top: 10%;
-  left: 80%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+	.right {
+	  margin: 50px;
+	  position: absolute;
+	  top: 10%;
+	  left: 80%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
 	
 
 </style>
@@ -107,12 +107,9 @@
 <body class="frame">
 
 
-	
-<h1 id="IntroVid">
-Chimera
-</h1>
-
-
+<!--
+BUTTONS
+-->
 <div class="left">
 <p style="float:left; display:inline-block;" id="LeftButton"></p>
 </div>
@@ -124,6 +121,15 @@ Chimera
 <div class="right">
 <p style="float:right; display:inline-block;" id="RightButton"></p>
 </div>
+	
+<!--
+TITLE & VIDEO SLOT
+-->
+<h1 id="IntroVid">
+Chimera
+</h1>
+
+
 	
 <!-- **************************************************************
 	WAKE UP BUTTON
