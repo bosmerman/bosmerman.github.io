@@ -27,20 +27,18 @@ a {
 	  position: relative;
 	  width: 100%;
 	  overflow: hidden;
-	  padding-top: 56.25%; /* 16:9 Aspect Ratio */ 
+	  /*padding-top: 56.25%; /* 16:9 Aspect Ratio */ 
 	}
 
 	.responsive-iframe {
 	  position: absolute;
-	  top: 0;
-	  left: 0;
+	  top: 10%;
+	  left: 50%;
 	  bottom: 0;
 	  right: 0;
 	  width: 70%;
 	  height: 70%;
 	  border: none;
-	  padding-top: 10%;
-	  text-align: center;
 	}
 
 
