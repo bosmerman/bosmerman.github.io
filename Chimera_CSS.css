@@ -39,6 +39,7 @@ a {
 	  width: 70%;
 	  height: 70%;
 	  border: none;
+	  z-index: -1;
 	}
 
 	.responsive-iframe-FRAME {
