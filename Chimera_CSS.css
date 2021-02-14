@@ -53,12 +53,11 @@ a {
 	  border: none;*/
 		
 	  /* FIXED SIZE CENTERED*/
-	  border: none;
-	  position: absolute;
-	  top: 10%;
-	  text-align: center;
-	  width: 1920px;
-	  height: 1080px;
+	 border: none;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 90%;
 	}
 
 
