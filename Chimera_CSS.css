@@ -21,6 +21,12 @@ a {
 }
 
 
+.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 /* *********************************************************************************************************
 	RESPONSIVE IFRAME 
 */
