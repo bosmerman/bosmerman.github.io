@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Stalinist One');
 
 body {
-	background-image: linear-gradient(to right, black -100%, dimgrey);
+	background-image: url("/ChimeraLobby.jpg");
+	background-repeat: no-repeat;
 }
 
 
